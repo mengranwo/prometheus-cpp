@@ -11,7 +11,7 @@ add_library(prometheus-cpp-core
   src/summary.cc
   src/summary_builder.cc
   src/text_serializer.cc
-)
+        include/prometheus/wavefront_serializer.h src/wavefront_serializer.cpp)
 
 set_target_properties(prometheus-cpp-core PROPERTIES EXPORT_NAME core)
 

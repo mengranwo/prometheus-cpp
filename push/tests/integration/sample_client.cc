@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
   // create a push gateway
   const auto labels = Gateway::GetInstanceLabel(GetHostName());
 
-  Gateway gateway{"127.0.0.1:9091", "sample_client", labels};
+  Gateway gateway{"127.0.0.1:2878", "sample_client", labels};
 
   // create a metrics registry with component=main labels applied to all its
   // metrics
